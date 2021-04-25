@@ -4,12 +4,15 @@ console.log('***** Cart Functions *****');
 let basket = [];
 
 function addItem(nameOfItem) {
-  console.log('in addItem', nameOfItem);
+  console.log('in addItem');
   //push new items into basket array.
   basket.push(nameOfItem);
   return true;
 } //end addItem
-addItem ('banana');
-addItem ('orange');
-addItem ('grapes');
-console.log(`Added 3 items, should return true: ${addItem()}`);
+console.log(`Adding banana, should return true: ${addItem('banana')}`);
+console.log(`Adding orange, should return true: ${addItem('orange')}`);
+console.log(`Adding grapes, should return true: ${addItem('grapes')}`);
+
+function listItem() {
+
+}
