@@ -13,6 +13,10 @@ console.log(`Adding banana, should return true: ${addItem('banana')}`);
 console.log(`Adding orange, should return true: ${addItem('orange')}`);
 console.log(`Adding grapes, should return true: ${addItem('grapes')}`);
 
-function listItem() {
+function listItem(array){
+  for (let i = 0; i < array.length; i++) {
+   console.log(`Expecting each item to be listed ${array[i]}`);
 
+  }
 }
+console.log(listItem(basket));
